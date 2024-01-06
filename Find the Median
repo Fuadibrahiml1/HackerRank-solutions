@@ -1,0 +1,13 @@
+def findMedian(arr):
+ arr=sorted(arr)
+ m=len(arr)
+ if m%2==1:
+ p=m//2
+
+ median=arr[p]
+ else:
+ p=m//2
+ c=p+1
+ sum=c+p
+ median=sum/2
+ return median
